@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@azure/functions": "^4.7.2-preview",
+    "axios": "^1.11.0",
+    "wink-lemmatizer": "^3.0.4"
+  }
+}

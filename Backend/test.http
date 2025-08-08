@@ -1,0 +1,13 @@
+POST http://localhost:7071/api/analyzeComplaint
+Content-Type: application/json
+
+{
+  "text":"I was bleeding badly and the staff just stood there ignoring me. No one helped for 15 minutes."
+
+
+
+
+
+
+
+}
