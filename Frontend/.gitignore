@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 # Azure Functions local settings (do not commit)
 local.settings.json
+.env

@@ -13,10 +13,14 @@ export default function App() {
     setResult(null);
 
     try {
-      const res = await fetch("http://localhost:7071/api/analyzeComplaint", {
+      // ✅ Secure: Backend endpoint and key from environment variables
+      const apiUrl = import.meta.env.VITE_API_URL;
+      const apiKey = import.meta.env.VITE_API_KEY;
+
+      const res = await fetch(`${apiUrl}?code=${apiKey}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ text: complaint }), // ✅ FIX: backend expects 'text'
+        body: JSON.stringify({ text: complaint }), // Backend expects 'text'
       });
 
       if (!res.ok) {
